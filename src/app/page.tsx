@@ -7,6 +7,7 @@ import Products from "./components/products-Card/page";
 import Universe from "./components/Universe/page";
 import FuturePost from "./components/Futured/page";
 import Footer from "./components/Footer/page";
+import Furniture from "./components/Furniture/page";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Navbar />
       
       <Hero />
+      <Furniture />
       <Editors />
        <Products />
        <Classman />

@@ -34,7 +34,7 @@ export default function Navbar() {
       <div className="hidden lg:flex lg:flex-grow lg:justify-between items-center">
         <ul className="font-Montserrat font-semibold text-[14px] text-[#737373] gap-[20px] leading-[24px] flex ml-40">
           <li><Link href="/">Home</Link></li>
-          <li><Link href="/Shop">Shop</Link></li>
+          <li><Link href="/product">Shop</Link></li>
           <li><Link href="/About">About</Link></li>
           <li><Link href="/Team">Blog</Link></li>
           <li><Link href="/Contact">Contact</Link></li>
