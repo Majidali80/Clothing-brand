@@ -33,3 +33,31 @@ export const furniture = defineQuery(`
 }
   
 `);
+
+
+export const productQuery = defineQuery(`
+  *[_type == "product" && _id == $id][0]{
+  _id,
+  title,
+  description,
+  price,
+  productImage {
+    asset->{
+      url
+    }
+  },
+  tags,
+  stockStatus,
+  discountPrice,
+}
+  
+`);
+
+export const categoryQuery = (`
+  *[_type == "category"] {
+    _id,
+    title
+}
+  
+`);
+

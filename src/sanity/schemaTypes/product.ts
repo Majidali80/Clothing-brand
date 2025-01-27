@@ -1,3 +1,4 @@
+import { title } from "process"
 import { defineType } from "sanity"
 
 export const product = defineType({
@@ -10,6 +11,14 @@ export const product = defineType({
             title: "Title",
             validation: (rule) => rule.required(),
             type: "string"
+        },
+        {
+            name:"slug",
+            type:"slug",
+            title:"Slug",
+            options :{
+                source : title
+            }
         },
         {
             name:"description",
@@ -36,6 +45,19 @@ export const product = defineType({
             name: "tags",
             type: "array",
             title: "Tags",
+            of: [{ type: "string" }]
+        },
+        {
+            name: "inventory",
+            type: "number",
+            title: "Inventory",
+            
+        },
+        
+        {
+            name: "colours",
+            type: "array",
+            title: "Colours",
             of: [{ type: "string" }]
         },
         {

@@ -68,7 +68,7 @@ export default function Futurepost() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 px-4 max-w-6xl mx-auto relative h-[600px]">
 
         {posts.map((post) => (
-          <div key={post.id} className="bg-white shadow-md rounded-lg overflow-hidden">
+          <div key={post.id} className="bg-white shadow-md rounded-lg overflow-hidden group relative transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl cursor-pointer">
             {/* Post Image */}
             <div className="relative">
               <Image
@@ -86,7 +86,7 @@ export default function Futurepost() {
       {/* Post Content */}
     <div className="p-3 relative">
     <div className="flex space-x-6">
-    <p className="font-Montserrat text-[12px] font-normal leading-[16px] tracking-[0.2px] text-left text-[#8EC2F2]">
+    <p className="font-Montserrat text-[12px] font-normal leading-[16px] tracking-[0.2px] text-left text-[#8EC2F2] ">
       {post.head1}</p>
     <p className="font-Montserrat text-[12px] font-normal leading-[16px] tracking-[0.2px] text-left">
       {post.head2}</p>

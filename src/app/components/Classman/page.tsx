@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import Link from 'next/link';
 
 export default function Classman(){
     return(
@@ -14,9 +14,11 @@ export default function Classman(){
                             <p className="w-[341px] h-[40px] font-Montserrat font-medium text-[14px] leading-[20px] text-[#FFFFFF]">We know how large objects will act, We know how are objects will act, We know</p>
                             <div className="w-[295px] h-[52px] flex gap-[34px]">
                                 <h3 className="w-[77px] h-[32px] font-Montserrat font-bold text-[24px] leading-[32px] text-[#FFFFFF]">$16.48</h3>
-                                <button className="w-[184px] h-[52px] rounded-[5px] px-[40px] bg-[#2DC071] py-[15px] flex gap-[10px]">
-                                    <h1 className="w-[104px] h-[22px] font-Montserrat text-[14px] leading-[22px] flex text-[#FFFFFF] justify-center ">ADD TO CART</h1>
-                                </button>
+                                <Link href="/cart">
+  <button className="w-[184px] h-[52px] rounded-[5px] px-[40px] bg-[#2DC071] py-[15px] flex gap-[10px]">
+    <h1 className="w-[104px] h-[22px] font-Montserrat text-[14px] leading-[22px] flex text-[#FFFFFF] justify-center">ADD TO CART</h1>
+  </button>
+</Link>
                             </div>
                         </div>
                         <div className="">

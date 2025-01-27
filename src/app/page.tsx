@@ -9,21 +9,21 @@ import FuturePost from "./components/Futured/page";
 import Footer from "./components/Footer/page";
 import Furniture from "./components/Furniture/page";
 
+
+
 export default function Home() {
   return (
-   <> 
-
-       <Topheader />
+    <>
       <Navbar />
-      
       <Hero />
       <Furniture />
+   
       <Editors />
-       <Products />
-       <Classman />
-       <Universe />
+      <Products />
+      <Classman />
+      <Universe />
       <FuturePost />
       <Footer />
-       </>
+    </>
   );
 }
