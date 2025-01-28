@@ -1,3 +1,4 @@
+"use client"
 import { useEffect, useState } from "react";
 import { sanityFetch } from "@/sanity/lib/fetch"; // Custom fetch function
 import { productQuery } from "@/sanity/lib/queries"; // Query for fetching related products
